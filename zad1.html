@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Таблица №1</title>
+    <meta charset="utf-8">
+    <style>
+        /* Общие стили */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #000000;
+        }
+        
+        /* Навигационное меню */
+        .main-menu {
+            background: linear-gradient(to right, #4B0082, #4B0082);
+            padding: 15px 0;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .main-menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .main-menu li {
+            margin: 0 15px;
+        }
+        
+        .main-menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .main-menu a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        /* Заголовок */
+        .text {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: #FFFFFF;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        
+        /* Контейнер для таблиц */
+        .tables-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        /* Стили для таблиц */
+        .table-wrapper {
+            width: 100%;
+            overflow-x: auto;
+            margin-bottom: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        table {
+            border-collapse: collapse;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 600px;
+        }
+        
+        td {
+            border: 2px solid #2c3e50;
+            height: 40px;
+            min-width: 40px;
+            text-align: center;
+        }
+        
+        /* Цвета для первой таблицы */
+        .table1 td {
+            background-color: #FFFFFF;
+        }
+        
+        .table1 tr:first-child td {
+            background-color: #FFFFFF;
+            height: 30px;
+        }
+        
+        .table1 tr:nth-child(2) td:nth-child(2),
+        .table1 tr:nth-child(2) td:nth-child(4),
+        .table1 tr:nth-child(2) td:nth-child(5) {
+            background-color: #FFFFFF;
+        }
+        
+        .table1 tr:nth-child(3) td:nth-child(2),
+        .table1 tr:nth-child(3) td:nth-child(4) {
+            background-color: #FFFFFF;
+        }
+        
+        .table1 tr:nth-child(4) td {
+            background-color: #FFFFFF;
+        }
+        
+        .table1 tr:last-child td {
+            background-color: #FFFFFF;
+        }
+        
+        /* Цвета для второй таблицы */
+        .table2 td[style*="aqua"] {
+            background-color: #7FFFD4 !important;
+            height: 30px;
+        }
+        
+        .table2 td[style*="lightgold"] {
+            background-color: #F0FFF0 !important;
+        }
+        
+        .table2 td[style*="red"] {
+            background-color: #e74c3c !important;
+        }
+        
+        .table2 td[style*="blue"] {
+            background-color: #2980b9 !important;
+        }
+        
+        .table2 td[style*="green"] {
+            background-color: #27ae60 !important;
+        }
+        
+        .table2 td[style*="yellow"] {
+            background-color: #ffd700 !important;
+        }
+        
+        /* Подписи таблиц */
+        .table-caption {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <nav class="main-menu">
+        <ul>
+            <li><a href="index.html">Главная страница</a></li>
+            <li><a href="zad1.html">Задание1</a></li>
+            <li><a href="zad2.html">Задание2</a></li>
+        </ul>
+    </nav>
+
+    <div class="text">
+        <h1>Задание 1 - Таблицы</h1>
+    </div>
+    
+    <div class="tables-container">
+        <div class="table-wrapper">
+            <table class="table1">
+                <tr>
+                    <td colspan="5"></td>
+                </tr>
+                <tr>
+                    <td rowspan="3"></td>
+                    <td></td>
+                    <td rowspan="3"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td rowspan="3"></td>
+                    <td rowspan="3"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <div class="table-caption">Таблица 1</div>
+        </div>
+        
+        <div class="table-wrapper">
+            <table class="table2">
+                <tr>
+                    <td colspan="8" style="background-color: aqua;"></td>
+                </tr>
+                <tr>
+                    <td rowspan="6" style="background-color: lightgold;"></td>
+                    <td colspan="6" style="background-color: aqua;"></td>
+                    <td rowspan="6" style="background-color: lightgold;"></td>
+                </tr>
+                <tr>
+                    <td rowspan="4" style="background-color: lightgold;"></td>
+                    <td colspan="4" style="background-color: aqua;"></td>
+                    <td rowspan="4" style="background-color: lightgold;"></td>
+                </tr>
+                <tr>
+                    <td rowspan="2" style="background-color: lightgold;"></td>
+                    <td style="background-color: red;"></td>
+                    <td style="background-color: blue;"></td>
+                    <td rowspan="2" style="background-color: lightgold;"></td>
+                </tr>
+                <tr>
+                    <td style="background-color: green;"></td>
+                    <td style="background-color: yellow;"></td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="background-color: aqua;"></td>
+                </tr>
+                <tr>
+                    <td colspan="6" style="background-color: aqua;"></td>
+                </tr>
+                <tr>
+                    <td colspan="8" style="background-color: aqua;"></td>
+                </tr>
+            </table>
+            <div class="table-caption">Таблица 2</div>
+        </div>
+    </div>
+</body>
+</html>

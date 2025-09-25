@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт студента НВГУ - Ивана Ивановича</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #333;
+            scroll-behavior: smooth; /* Плавная прокрутка к якорям */
+        }
+        header {
+            background: linear-gradient(135deg, #4B0082, #9400D3);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .main {
+            display: flex;
+            margin: 20px 0;
+        }
+        .content {
+            flex: 3;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            margin-left: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 100px;
+            align-self: flex-start;
+        }
+        footer {
+            background: #000000;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        h1, h2, h3 {
+            color: #000000;
+        }
+        .profile-img {
+            max-width: 200px;
+            border-radius: 50%;
+            border: 5px solid #000000;
+            display: block;
+            margin: 0 auto;
+        }
+        a {
+            color: #000000;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        blockquote {
+            font-style: italic;
+            border-left: 3px solid #1a5fb4;
+            padding-left: 15px;
+            margin-left: 15px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .hobby-list {
+            columns: 2;
+            column-gap: 20px;
+        }
+        .hobby-list li {
+            break-inside: avoid;
+            margin-bottom: 10px;
+        }
+        .section-anchor {
+            display: block;
+            position: relative;
+            top: -80px; /* С учетом высоты хедера */
+            visibility: hidden;
+        }
+        .nav-link {
+            display: block;
+            padding: 5px 10px;
+            border-left: 3px solid transparent;
+            transition: all 0.3s;
+        }
+        .nav-link:hover {
+            border-left: 3px solid #1a5fb4;
+            background-color: #f0f8ff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Персональный сайт студента НВГУ</h1>
+            <p>Иван Иванович | Факультет информационных технологий и математики</p>
+        </div>
+    </header>
+
+    <div class="container main">
+        <div class="content">
+            <section id="about">
+                <span class="section-anchor" id="about-anchor"></span>
+                <h2>Обо мне</h2>
+                <img src="FFX.jpg" alt="Фото студента" class="profile-img">
+                <p>Привет! Меня зовут Иван Иванович, и я студент <strong>Нижневартовского государственного университета</strong>. Этот сайт был создан в рамках лабораторной работы.</p>
+            </section>
+
+            <section id="contact">
+                <span class="section-anchor" id="contact-anchor"></span>
+                <h2>Контактная информация</h2>
+                <p>Электронная почта: <a href="mailto:ivan.ivan@nvgu.ru">ivan.ivan@nvgu.ru</a></p>
+                <p>Телефон: <a href="tel:+79001234567">+7 (900) 123-45-67</a></p>
+                <address>
+                    Адрес: г. Нижневартовск, ул. Ленина, д. 56
+                </address>
+            </section>
+
+            <section id="education">
+                <span class="section-anchor" id="education-anchor"></span>
+                <h2>Образование</h2>
+                <h3>Нижневартовский государственный университет (НВГУ)</h3>
+                <p>НВГУ — это современный университет, который готовит специалистов в различных областях. Университет был основан в 1988 году и с тех пор является ведущим образовательным учреждением в Ханты-Мансийском автономном округе.</p>
+                <p>Сайт университета: <a href="https://nvsu.ru/" target="_blank">https://nvsu.ru/</a></p>
+                
+                <h3>Моя группа</h3>
+                <p>Я учусь в группе <mark>3301</mark> на факультете информационных технологий и математики.</p>
+                
+                <h3>Моя будущая профессия</h3>
+                <p>В будущем я хочу стать <strong>искателем приключений</strong>. Эта профессия сочетает в себе творчество и технические навыки, что мне особенно нравится.</p>
+            </section>
+
+            <section id="hobbies">
+                <span class="section-anchor" id="hobbies-anchor"></span>
+                <h2>Мои увлечения</h2>
+                <ul class="hobby-list">
+                    <li>Просмотр аниме</li>
+                    <li>Просмотр Косплей моделей</li>
+                    <li>Чтение научпопа по Биологии, Психологии и Физике</li>
+                    <li>Чтение книг</li>
+                    <li>Компьютерные игры</li>
+                    <li>Качалка</li>
+                    <li>Слушаю музыку и люблю котиков</li>
+                </ul>
+                
+                <h3>Мои любимые книги</h3>
+                <ol>
+                    <li>«Бессистемная отладка» - Тимофей Царенко</li>
+                    <li>«Хризалида» - Джон Голд</li>
+                    <li>«Бегающий Сейф» - Сергей Вишневский</li>
+                </ol>
+            </section>
+
+            <section id="schedule">
+                <span class="section-anchor" id="schedule-anchor"></span>
+                <h2>Расписание занятий</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>День недели</th>
+                            <th>Предмет</th>
+                            <th>Время</th>
+                            <th>Кабинет</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Понедельник</td>
+                            <td>Физра</td>
+                            <td>8:30-10:00</td>
+                            <td>каб. 315</td>
+                        </tr>
+                        <tr>
+                            <td>Вторник</td>
+                            <td>Методы оптимизации</td>
+                            <td>13:50-15:20</td>
+                            <td>каб. 410</td>
+                        </tr>
+                        <tr>
+                            <td>Среда</td>
+                            <td>Архитектура ИС</td>
+                            <td>15:30-17:00</td>
+                            <td>каб. 211</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="plans">
+                <span class="section-anchor" id="plans-anchor"></span>
+                <h2>Мои планы на будущее</h2>
+                <p>После окончания университета я планирую:</p>
+                <ul>
+                    <li>Устроиться на работу куда-нибудь</li>
+                    <li>Продолжить познание нового</li>
+                    <li>Возможно, создать собственный стартап</li>
+                    <li>Попытаться не умереть</li>
+                </ul>
+                
+                <blockquote>
+                    "Программирование — это образ мышления и способ решения проблем."
+                </blockquote>
+            </section>
+        </div>
+
+        <div class="sidebar">
+            <h3>Быстрые ссылки</h3>
+            <nav>
+                <ul>
+                    <li><a class="nav-link" href="#about-anchor">Обо мне</a></li>
+                    <li><a class="nav-link" href="#contact-anchor">Контакты</a></li>
+                    <li><a class="nav-link" href="#education-anchor">Образование</a></li>
+                    <li><a class="nav-link" href="#hobbies-anchor">Увлечения</a></li>
+                    <li><a class="nav-link" href="#schedule-anchor">Расписание</a></li>
+                    <li><a class="nav-link" href="#plans-anchor">Планы на будущее</a></li>
+                </ul>
+            </nav>
+            
+            <h3>Полезные ресурсы</h3>
+            <ul>
+                <li><a href="https://nvsu.ru/" target="_blank">Официальный сайт НВГУ</a></li>
+                <li><a href="https://moodle.nvsu.ru" target="_blank">Электронное обучение</a></li>
+                <li><a href="https://library.nvsu.ru" target="_blank">Электронная библиотека</a></li>
+            </ul>
+            
+            <h3>Цитата жизни</h3>
+            <blockquote>
+                "Моя честь - зовётся верность" 
+                <footer>- Генрих Гиммлер</footer>
+            </blockquote>
+            
+            <h3>Мои навыки</h3>
+            <p>HTML5 <progress value="85" max="100">85%</progress></p>
+            <p>CSS3 <progress value="75" max="100">75%</progress></p>
+            <p>JavaScript <progress value="60" max="100">60%</progress></p>
+            <p>Python <progress value="70" max="100">70%</progress></p>
+	    
+	    <h3>Прочие задания</h3>
+           	<li><a href="zad1.html">Задание1</a></li>
+		<li><a href="zad2.html">Задание2</a></li>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Иван Иванович - Сайт студента НВГУ</p>
+            <p>Последнее обновление: <time datetime="2023-10-15">21 сентября 2025 года</time></p>
+        </div>
+    </footer>
+</body>
+</html>
